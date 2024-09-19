@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto pt-8 w-full px-80 h-[500px] mt-16;
+    font-family: "Nunito", sans-serif; /* Specify the imported font family */
+  }
+  .details {
+    @apply mx-auto p-8 max-w-screen-lg;
+    font-family: "Geologica", sans-serif; /* Specify the imported font family */
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      @apply px-4 py-4 max-w-full;
+      font-family: "Nunito", sans-serif;
+    }
+    .details {
+      @apply px-4 py-4 max-w-full;
+      font-family: "Geologica", sans-serif;
+    }
+  }
+}
