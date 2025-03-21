@@ -22,7 +22,7 @@ const LoginPage = () => {
       //http://localhost:8000/auth/login
       //https://rockwell-project.onrender.com
       response = await axios.post(
-        "http://localhost:8000/auth/login",
+        "https://rockwell-project.onrender.com/",
         {
           email: formData.get("email"),
           password: formData.get("password"),
