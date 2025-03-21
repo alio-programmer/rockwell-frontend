@@ -24,7 +24,7 @@ const Register = () => {
       role: "customer",
     };
     const response = await axios.post(
-      "http://localhost:8000/auth/signup",
+      "https://rockwell-project.onrender.com/",
       data,
       { withCredentials: true, credentials: "include" }
     );
