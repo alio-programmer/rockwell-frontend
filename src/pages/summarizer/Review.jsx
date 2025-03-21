@@ -27,7 +27,7 @@ const Review = () => {
     try {
       setloading(false);
       response = await axios.post(
-        "http://localhost:8000/summary/summarize",
+        "https://rockwell-project.onrender.com/summary/summarize",
         data,
         {
           withCredentials: true,
