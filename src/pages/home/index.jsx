@@ -17,6 +17,7 @@ const HomePage = () => {
   });
 
   const user = localStorage.getItem("userInfo");
+  const Token = user.Token;
 
   useEffect(() => {
     if (user) {
@@ -40,7 +41,10 @@ const HomePage = () => {
         "https://rockwell-project.onrender.com/api/postquery",
         { query: input },
         {
-          headers: { "Content-Type": "application/json" },
+          headers: { 
+            "Content-Type": "application/json",
+            "Authorization" : `Bearer ${Token}`
+          },
           withCredentials: true,
         }
       );
